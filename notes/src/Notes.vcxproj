@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46646A1B-9F70-3F82-B5A9-E89D6D391297}</ProjectGuid>
+    <RootNamespace>Notes</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>obj\</IntermediateDirectory>
+    <PrimaryOutput>Notes</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>obj\</IntermediateDirectory>
+    <PrimaryOutput>Notes</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>obj\</IntDir>
+    <TargetName>Notes</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>obj\</IntDir>
+    <TargetName>Notes</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>Qt 5.9.1</QtInstall>
+    <QtModules>core;core-private;sql;network;gui;gui-private;widgets;concurrent</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>5.9.1_msvc2015_64</QtInstall>
+    <QtModules>core;core-private;sql;network;gui;gui-private;widgets;concurrent</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\3rdParty\qxt;moc;uic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QXT_STATIC;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\Notes.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>1.5</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QXT_STATIC;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>qrc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>uic</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\3rdParty\qmarkdowntextedit;..\3rdParty\qautostart\src;..\3rdParty\QSimpleUpdater\include;..\3rdParty\qxt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QXT_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Notes.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>1.5</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QXT_STATIC;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SQL_LIB;QT_CONCURRENT_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>qrc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>uic</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\markdownhighlighter.cpp" />
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\qmarkdowntextedit.cpp" />
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\qownlanguagedata.cpp" />
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\qplaintexteditsearchwidget.cpp" />
+    <ClCompile Include="..\3rdParty\qautostart\src\qautostart.cpp" />
+    <ClCompile Include="..\3rdParty\QSimpleUpdater\src\Downloader.cpp" />
+    <ClCompile Include="..\3rdParty\QSimpleUpdater\src\QSimpleUpdater.cpp" />
+    <ClCompile Include="..\3rdParty\QSimpleUpdater\src\Updater.cpp" />
+    <ClCompile Include="aboutwindow.cpp" />
+    <ClCompile Include="customdocument.cpp" />
+    <ClCompile Include="dbmanager.cpp" />
+    <ClCompile Include="editorsettingsbutton.cpp" />
+    <ClCompile Include="framelesswindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="notedata.cpp" />
+    <ClCompile Include="notemodel.cpp" />
+    <ClCompile Include="noteview.cpp" />
+    <ClCompile Include="notewidgetdelegate.cpp" />
+    <ClCompile Include="..\3rdParty\qxt\qxtglobal.cpp" />
+    <ClCompile Include="..\3rdParty\qxt\qxtglobalshortcut.cpp" />
+    <ClCompile Include="..\3rdParty\qxt\qxtglobalshortcut_win.cpp" />
+    <ClCompile Include="singleinstance.cpp" />
+    <ClCompile Include="styleeditorwindow.cpp" />
+    <ClCompile Include="updaterwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="aboutwindow.h">
+    </QtMoc>
+    <QtMoc Include="customDocument.h">
+    </QtMoc>
+    <QtMoc Include="dbmanager.h">
+    </QtMoc>
+    <QtMoc Include="editorsettingsbutton.h">
+    </QtMoc>
+    <QtMoc Include="framelesswindow.h">
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+    </QtMoc>
+    <QtMoc Include="notedata.h">
+    </QtMoc>
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\linenumberarea.h" />
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\markdownhighlighter.h" />
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\qmarkdowntextedit.h" />
+    <ClInclude Include="..\..\Third-party\qmarkdowntextedit\qownlanguagedata.h" />
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\qplaintexteditsearchwidget.h" />
+    <ClInclude Include="..\3rdParty\qautostart\src\qautostart.h" />
+    <QtMoc Include="..\3rdParty\QSimpleUpdater\src\Downloader.h" />
+    <QtMoc Include="..\3rdParty\QSimpleUpdater\src\Updater.h" />
+    <QtMoc Include="..\3rdParty\QSimpleUpdater\include\QSimpleUpdater.h" />
+    <ClInclude Include="notemodel.h" />
+    <QtMoc Include="noteview.h">
+    </QtMoc>
+    <QtMoc Include="notewidgetdelegate.h">
+    </QtMoc>
+    <ClInclude Include="..\3rdParty\qxt\qxtglobal.h" />
+    <QtMoc Include="..\3rdParty\qxt\qxtglobalshortcut.h">
+    </QtMoc>
+    <ClInclude Include="..\3rdParty\qxt\qxtglobalshortcut_p.h" />
+    <QtMoc Include="singleinstance.h">
+    </QtMoc>
+    <QtMoc Include="styleeditorwindow.h">
+    </QtMoc>
+    <QtMoc Include="updaterwindow.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">moc\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\..\Third-party\qmarkdowntextedit\qplaintexteditsearchwidget.ui" />
+    <QtUic Include="..\3rdParty\QSimpleUpdater\src\Downloader.ui" />
+    <QtUic Include="aboutwindow.ui">
+    </QtUic>
+    <QtUic Include="mainwindow.ui">
+    </QtUic>
+    <QtUic Include="styleeditorwindow.ui">
+    </QtUic>
+    <QtUic Include="updaterwindow.ui">
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\3dots_Hovered.png" />
+    <None Include="images\3dots_Pressed.png" />
+    <None Include="images\3dots_Regular.png" />
+    <None Include="fonts\josefinsans\JosefinSans-Bold.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-BoldItalic.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-ExtraLight.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-ExtraLightItalic.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-Italic.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-Light.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-LightItalic.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-Medium.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-MediumItalic.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-Regular.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-SemiBold.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-SemiBoldItalic.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-Thin.ttf" />
+    <None Include="fonts\josefinsans\JosefinSans-ThinItalic.ttf" />
+    <None Include="fonts\jost\Jost-Black.ttf" />
+    <None Include="fonts\jost\Jost-BlackItalic.ttf" />
+    <None Include="fonts\jost\Jost-Bold.ttf" />
+    <None Include="fonts\jost\Jost-BoldItalic.ttf" />
+    <None Include="fonts\jost\Jost-ExtraBold.ttf" />
+    <None Include="fonts\jost\Jost-ExtraBoldItalic.ttf" />
+    <None Include="fonts\jost\Jost-ExtraLight.ttf" />
+    <None Include="fonts\jost\Jost-ExtraLightItalic.ttf" />
+    <None Include="fonts\jost\Jost-Italic.ttf" />
+    <None Include="fonts\jost\Jost-Light.ttf" />
+    <None Include="fonts\jost\Jost-LightItalic.ttf" />
+    <None Include="fonts\jost\Jost-Medium.ttf" />
+    <None Include="fonts\jost\Jost-MediumItalic.ttf" />
+    <None Include="fonts\jost\Jost-Regular.ttf" />
+    <None Include="fonts\jost\Jost-SemiBold.ttf" />
+    <None Include="fonts\jost\Jost-SemiBoldItalic.ttf" />
+    <None Include="fonts\jost\Jost-Thin.ttf" />
+    <None Include="fonts\jost\Jost-ThinItalic.ttf" />
+    <None Include="fonts\mate\Mate-Italic.ttf" />
+    <None Include="fonts\mate\Mate-Regular.ttf" />
+    <None Include="fonts\ptserif\PTSerif-Bold.ttf" />
+    <None Include="fonts\ptserif\PTSerif-BoldItalic.ttf" />
+    <None Include="fonts\ptserif\PTSerif-Italic.ttf" />
+    <None Include="fonts\ptserif\PTSerif-Regular.ttf" />
+    <None Include="fonts\roboto-hinted\Roboto-Bold.ttf" />
+    <None Include="fonts\roboto-hinted\Roboto-Medium.ttf" />
+    <None Include="fonts\roboto-hinted\Roboto-Regular.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-Black.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-BlackItalic.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-Bold.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-BoldItalic.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-ExtraLight.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-ExtraLightItalic.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-Italic.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-Light.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-LightItalic.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-Regular.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-SemiBold.ttf" />
+    <None Include="fonts\sourcesanspro\SourceSansPro-SemiBoldItalic.ttf" />
+    <None Include="fonts\trykker\Trykker-Regular.ttf" />
+    <None Include="images\arrow-right-dark.png" />
+    <None Include="images\arrow-right.png" />
+    <None Include="images\closeButton.png" />
+    <None Include="images\decrease-width-dark.png" />
+    <None Include="images\decrease-width.png" />
+    <QtRcc Include="fonts.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fonts</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fonts</InitFuncName>
+    </QtRcc>
+    <None Include="images\green.png" />
+    <None Include="images\greenHovered.png" />
+    <None Include="images\greenInHovered.png" />
+    <None Include="images\greenInPressed.png" />
+    <None Include="images\greenPressed.png" />
+    <None Include="fonts\iaduo\iAWriterDuoS-Bold.ttf" />
+    <None Include="fonts\iaduo\iAWriterDuoS-BoldItalic.ttf" />
+    <None Include="fonts\iaduo\iAWriterDuoS-Italic.ttf" />
+    <None Include="fonts\iaduo\iAWriterDuoS-Regular.ttf" />
+    <None Include="fonts\iamono\iAWriterMonoS-Bold.ttf" />
+    <None Include="fonts\iamono\iAWriterMonoS-BoldItalic.ttf" />
+    <None Include="fonts\iamono\iAWriterMonoS-Italic.ttf" />
+    <None Include="fonts\iamono\iAWriterMonoS-Regular.ttf" />
+    <None Include="fonts\iaquattro\iAWriterQuattroS-Bold.ttf" />
+    <None Include="fonts\iaquattro\iAWriterQuattroS-BoldItalic.ttf" />
+    <None Include="fonts\iaquattro\iAWriterQuattroS-Italic.ttf" />
+    <None Include="fonts\iaquattro\iAWriterQuattroS-Regular.ttf" />
+    <QtRcc Include="images.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">images</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">images</InitFuncName>
+    </QtRcc>
+    <None Include="images\increase-width-dark.png" />
+    <None Include="images\increase-width.png" />
+    <None Include="images\magnifyingGlass.png" />
+    <None Include="images\minus-dark.png" />
+    <None Include="images\minus.png" />
+    <None Include="images\newNote_Hovered.png" />
+    <None Include="images\newNote_Pressed.png" />
+    <None Include="images\newNote_Regular.png" />
+    <None Include="images\notes_system_tray_icon.png" />
+    <None Include="images\plus-dark.png" />
+    <None Include="images\plus.png" />
+    <None Include="images\red.png" />
+    <None Include="images\redHovered.png" />
+    <None Include="images\redPressed.png" />
+    <None Include="styles\style.css" />
+    <QtRcc Include="styles.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">styles</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">styles</InitFuncName>
+    </QtRcc>
+    <None Include="images\textEdit_background_pattern.png" />
+    <None Include="images\trashCan_Hovered.png" />
+    <None Include="images\trashCan_Pressed.png" />
+    <None Include="images\trashCan_Regular.png" />
+    <None Include="images\unfocusedButton.png" />
+    <None Include="images\windows_close_hovered.png" />
+    <None Include="images\windows_close_pressed.png" />
+    <None Include="images\windows_close_regular.png" />
+    <None Include="images\windows_de-maximize_hovered.png" />
+    <None Include="images\windows_de-maximize_pressed.png" />
+    <None Include="images\windows_de-maximize_regular.png" />
+    <None Include="images\windows_maximize_hovered.png" />
+    <None Include="images\windows_maximize_pressed.png" />
+    <None Include="images\windows_maximize_regular.png" />
+    <None Include="images\windows_minimize_hovered.png" />
+    <None Include="images\windows_minimize_pressed.png" />
+    <None Include="images\windows_minimize_regular.png" />
+    <None Include="images\yellow.png" />
+    <None Include="images\yellowHovered.png" />
+    <None Include="images\yellowPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\images\notes.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

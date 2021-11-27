@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{1d17cbdd-5bb0-426c-acb6-af9d6a6ff90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\qxt">
+      <UniqueIdentifier>{0bf88336-40ef-465d-8df1-ef72606b814b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\qautostart">
+      <UniqueIdentifier>{07b97689-b5cb-4fcd-8dea-95059e30bf49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\qmarkdowntextedit">
+      <UniqueIdentifier>{85596bff-b5b8-4da7-879f-0f9349e31e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\QSimpleUpdater">
+      <UniqueIdentifier>{f4b2e793-c2a1-44e6-989c-d6c07676366d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aboutwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="customdocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editorsettingsbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framelesswindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="notedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="notemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="noteview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="notewidgetdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="singleinstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="styleeditorwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="updaterwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\qxt\qxtglobal.cpp">
+      <Filter>ThirdParty\qxt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\qxt\qxtglobalshortcut.cpp">
+      <Filter>ThirdParty\qxt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\qxt\qxtglobalshortcut_win.cpp">
+      <Filter>ThirdParty\qxt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\qautostart\src\qautostart.cpp">
+      <Filter>ThirdParty\qautostart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\QSimpleUpdater\src\Downloader.cpp">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\QSimpleUpdater\src\QSimpleUpdater.cpp">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\QSimpleUpdater\src\Updater.cpp">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\markdownhighlighter.cpp">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\qmarkdowntextedit.cpp">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\qownlanguagedata.cpp">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Third-party\qmarkdowntextedit\qplaintexteditsearchwidget.cpp">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="aboutwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="customDocument.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dbmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="editorsettingsbutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="framelesswindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="notedata.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="notemodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="noteview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="notewidgetdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="singleinstance.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="styleeditorwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="updaterwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\3rdParty\qxt\qxtglobalshortcut.h">
+      <Filter>ThirdParty\qxt</Filter>
+    </QtMoc>
+    <QtMoc Include="..\3rdParty\QSimpleUpdater\src\Downloader.h">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </QtMoc>
+    <QtMoc Include="..\3rdParty\QSimpleUpdater\src\Updater.h">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\linenumberarea.h">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\markdownhighlighter.h">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\qmarkdowntextedit.h">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </QtMoc>
+    <QtMoc Include="..\..\Third-party\qmarkdowntextedit\qplaintexteditsearchwidget.h">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </QtMoc>
+    <QtMoc Include="..\3rdParty\QSimpleUpdater\include\QSimpleUpdater.h">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="moc\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="aboutwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="styleeditorwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="updaterwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\3rdParty\QSimpleUpdater\src\Downloader.ui">
+      <Filter>ThirdParty\QSimpleUpdater</Filter>
+    </QtUic>
+    <QtUic Include="..\..\Third-party\qmarkdowntextedit\qplaintexteditsearchwidget.ui">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\3dots_Hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3dots_Pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\3dots_Regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-ExtraLight.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-ExtraLightItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-Light.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-LightItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-Medium.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-MediumItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-SemiBold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-SemiBoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-Thin.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\josefinsans\JosefinSans-ThinItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Black.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-BlackItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-ExtraBold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-ExtraBoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-ExtraLight.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-ExtraLightItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Light.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-LightItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Medium.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-MediumItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-SemiBold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-SemiBoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-Thin.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\jost\Jost-ThinItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\mate\Mate-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\mate\Mate-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\ptserif\PTSerif-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\ptserif\PTSerif-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\ptserif\PTSerif-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\ptserif\PTSerif-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\roboto-hinted\Roboto-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\roboto-hinted\Roboto-Medium.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\roboto-hinted\Roboto-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-Black.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-BlackItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-ExtraLight.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-ExtraLightItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-Light.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-LightItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-SemiBold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\sourcesanspro\SourceSansPro-SemiBoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\trykker\Trykker-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\arrow-right-dark.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\arrow-right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\closeButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\decrease-width-dark.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\decrease-width.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="fonts.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\green.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\greenHovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\greenInHovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\greenInPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\greenPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaduo\iAWriterDuoS-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaduo\iAWriterDuoS-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaduo\iAWriterDuoS-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaduo\iAWriterDuoS-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iamono\iAWriterMonoS-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iamono\iAWriterMonoS-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iamono\iAWriterMonoS-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iamono\iAWriterMonoS-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaquattro\iAWriterQuattroS-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaquattro\iAWriterQuattroS-BoldItalic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaquattro\iAWriterQuattroS-Italic.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="fonts\iaquattro\iAWriterQuattroS-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="images.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\increase-width-dark.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\increase-width.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\magnifyingGlass.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\minus-dark.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\minus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\newNote_Hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\newNote_Pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\newNote_Regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\notes_system_tray_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\plus-dark.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\plus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\redHovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\redPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="styles\style.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="styles.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\textEdit_background_pattern.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\trashCan_Hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\trashCan_Pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\trashCan_Regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\unfocusedButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_close_hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_close_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_close_regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_de-maximize_hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_de-maximize_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_de-maximize_regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_maximize_hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_maximize_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_maximize_regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_minimize_hovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_minimize_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\windows_minimize_regular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\yellow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\yellowHovered.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\yellowPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\images\notes.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\3rdParty\qxt\qxtglobalshortcut_p.h">
+      <Filter>ThirdParty\qxt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\qxt\qxtglobal.h">
+      <Filter>ThirdParty\qxt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\qautostart\src\qautostart.h">
+      <Filter>ThirdParty\qautostart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Third-party\qmarkdowntextedit\qownlanguagedata.h">
+      <Filter>ThirdParty\qmarkdowntextedit</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
